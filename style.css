@@ -249,3 +249,18 @@ a.btn:nth-child(2)::before{
 .social-icons a:hover::before{
     width: 100%;
 }
+.home-image{
+    position: relative;
+    
+}
+.img-box{
+    text-align: center;
+   
+
+}
+.img-box img{
+    width: 380px;
+    max-width: 450px;
+    height: 550px;
+}
+
