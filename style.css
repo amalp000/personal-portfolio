@@ -230,7 +230,7 @@ a.btn:nth-child(2)::before{
     font-size: 1.5rem;
 
 }
-.social-iconsa:hover{
+.social-icons a:hover{
     color: var(--bg-color);
 }
 .social-icons a::before{
@@ -238,7 +238,7 @@ a.btn:nth-child(2)::before{
     position:absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     background: var(--hover-color);
     transition: .6s;
