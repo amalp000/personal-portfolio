@@ -56,6 +56,12 @@ header{
     width: 100%;
     padding: 20px 10%;
 }
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--secon-bg-color);
+    padding: 12px 10%;
+
+}
 .logo{
     font-size: 26px;
     font-weight: 700;
@@ -719,16 +725,16 @@ margin-bottom: .2rem;
 }
 
 /* footer css......................... */
-/* .footer{
+ footer{
     padding: 1.5rem 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer p{
+footer p{
     color: #bdbdbd;
 }
-.footer a{
+footer a{
     display: inline-flex;
     justify-content: center;
     color: var(--text-color);
@@ -736,9 +742,11 @@ margin-bottom: .2rem;
     padding: .6rem;
     border-radius: 5px;
 }
-.footer a i{
+footer a i{
+    font-size: 1rem;
+    color: var(--secon-bg-color);
 
-} */
+} 
 
 
 
@@ -866,47 +874,18 @@ margin-bottom: .2rem;
     }
 }
 
-@keyframes animate{
-    0%{
-        opacity: 0%;
-        transform: rotateY(90deg);
-        filter: blur(10px);
+
+
+
+
+/* break points */
+
+@media(max-width:991px){
+    header,
+    header.sticky{
+        padding: 15px 5%;
     }
-    100%{
-        opacity: 1;
-        transform: rotateY(0deg);
-        filter: blur(0px);
-}
-}
-h1 span:nth-child(1)
-{
-    animation-delay: 0.6s;
-}
-h1 span:nth-child(2)
-{
-    animation-delay: 1s;
-}
-h1 span:nth-child(3)
-{
-    animation-delay: 1.7s;
-}
-h1 span:nth-child(4)
-{
-    animation-delay: 2.3s;
-}
-h1 span:nth-child(5)
-{
-    animation-delay: 2.7s;
-}
-h1 span:nth-child(6)
-{
-    animation-delay: 3.2s;
-}
-h1 span:nth-child(7)
-{
-    animation-delay: 3.7s;
-}
-h1 span:nth-child(8)
-{
-    animation-delay: 4s;
+    footer{
+        padding: 15px 5%;
+    }
 }
