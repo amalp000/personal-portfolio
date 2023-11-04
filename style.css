@@ -156,7 +156,7 @@ section{
     width: 320px;
     height: 45px;
 }
-.btn-box a.btn{
+.btn-box .btn{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -173,11 +173,11 @@ section{
     position: relative;overflow: hidden;
     z-index: 1;
 }
-a.btn:hover{
+.btn:hover{
     color: var(--hover-color);
 
 }
-a.btn::before{
+.btn::before{
     content: "";
     position: absolute;
     top: 0;
@@ -189,17 +189,17 @@ a.btn::before{
     transition: .4s;
 
 }
-a.btn:hover::before{
+.btn:hover::before{
     width: 100%;
 }
-a.btn:nth-child(2){
+.btn:nth-child(2){
     background: var(--bg-color);
     color: var(--hover-color);
 }
-a.btn:nth-child(2):hover{
+.btn:nth-child(2):hover{
     color: var(--bg-color);
 }
-a.btn:nth-child(2)::before{
+.btn:nth-child(2)::before{
     background: var(--hover-color);
 
 }
@@ -660,9 +660,40 @@ margin-bottom: .2rem;
     color: black;
 }
 
+/* contact section...................... */
+.contant{
+    background: var(--secon-bg-color);
+    width: 100%;
+}
+.contant form{
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+.contant form input,
+.contant form textarea{
+    width: 100%;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: none;
+    margin-bottom: .8rem;
+    border-radius: 5px;
+    padding: .7rem;
+}
+.contant form textarea{
+    resize: none;
+}
+.formBtn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
-
-
+}
+.formBtn .btn{
+    cursor: pointer;
+    font-size: 1rem;
+}
 
 
 
@@ -709,6 +740,7 @@ margin-bottom: .2rem;
 
 @keyframes morph{
     0%,
+    
     100%{
         border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
     }
