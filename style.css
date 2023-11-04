@@ -25,12 +25,31 @@
     0 0 100px rgba(18,247,255,0.3),
     0 0 150px rgba(18,247,255,0.3);
 }
+::-webkit-scrollbar{
+    height: 0;
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--secon-bg-color);
+
+}
+::-webkit-scrollbar-thumb{
+    background: var(--hover-color);
+    border-radius: 5rem;
+
+}
+
 body{
     font-family: "Poppins",sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,6 +85,10 @@ span{
     0 0 100px rgba(18,247,255,0.6),
     0 0 150px rgba(18,247,255,0.6);
 }
+.navlist a.active{
+    color: var(--hover-color);
+}
+
 #menu-icon{
     font-size: 1.8rem;
     z-index: 10001;
@@ -695,11 +718,27 @@ margin-bottom: .2rem;
     font-size: 1rem;
 }
 
+/* footer css......................... */
+/* .footer{
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer p{
+    color: #bdbdbd;
+}
+.footer a{
+    display: inline-flex;
+    justify-content: center;
+    color: var(--text-color);
+    background: var(--hover-color);
+    padding: .6rem;
+    border-radius: 5px;
+}
+.footer a i{
 
-
-
-
-
+} */
 
 
 
