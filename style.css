@@ -91,7 +91,7 @@ span{
     0 0 100px rgba(18,247,255,0.6),
     0 0 150px rgba(18,247,255,0.6);
 }
-.navlist a.active{
+.navlist a:active{
     color: var(--hover-color);
 }
 
@@ -748,9 +748,28 @@ footer a i{
 
 } 
 
+/* parallax.................................... */
 
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s ;
+}
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 2s;
+}
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
 
-
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
 
 
 
@@ -888,4 +907,109 @@ footer a i{
     footer{
         padding: 15px 5%;
     }
+    section{
+        padding: 50px 5%;
+
+    }
+    .navlist a{
+        padding: 8px 15px;
+
+    }
+    :root{
+        --big-font:2.2rem;
+        --normal-font:1.8rem;
+        --neon-box-shadow:0 0 .8rem #12f7ff;
+        --h2-font:2rem;
+    
+    }
+    .home-content{
+        margin-top: 5rem;
+
+    }
+    .social-icons{
+        margin-top: 2rem;
+
+
+    }
 }
+@media(max-width:768px){
+    #menu-icon{
+        display: block;
+        transition: all .4s ease;
+    }
+    #menu-icon.bx-x{
+        transform: rotate(-180deg);
+    }
+    .navlist{
+        display: flex;
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        padding: 0 5%;
+        transition: all .45s ease;
+    }
+    .navlist a{
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+
+    }
+    .navlist.open{
+        top:100%;
+
+
+    }
+    .home{
+        grid-template-columns: 1fr;
+    }
+    .home-image{
+        margin-bottom: 5rem;
+
+    }
+    .liquid-shape{
+        width: 80%;
+        left: 10%;
+        top: 13%;
+
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
+    .filter-button{
+        margin: 2.5rem 0;
+    }
+
+}
+@media(max-width:420px){
+    html{
+        font-size: 80%;
+    }
+    footer p{
+        font-size:.8rem;
+
+    }
+    .filter-button .btn{
+        font-size: .8rem;
+    }
+    .image-about img{
+        max-width: 100%;
+        height: auto;
+        width: 300px;
+    }
+    .info-about1,.info-about2,.info-about3{
+        display: none;
+    }
+    .image-about p{
+        font-size: 1rem;
+        
+
+    }
+}
+    
