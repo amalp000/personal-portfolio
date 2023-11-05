@@ -141,3 +141,41 @@ scrollBottom.forEach((el)=>observer.observe(el));
 
 const scrollTop=document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el)=>observer.observe(el));
+
+
+const downloadBtn=document.querySelector("#downloadbtn");
+const fileLink="https://drive.google.com/file/d/1U_jHKNN6jvgObzxw6V1tGJFJM8chW9sY/view?usp=drive_link";
+
+const initTimer=()=>{
+
+    if(downloadBtn.classList.contains("disable-timer")){
+        return( location.href=fileLink);
+
+    }
+
+    
+    let timer = downloadBtn.dataset.timer;
+    downloadBtn.classList.add("timer");
+    downloadBtn.innerHTML = `<b> ${timer}</b>seconds waiting`;
+
+
+    const initCounter = setInterval(()=>{
+        if (timer > 0){
+        timer--;
+        return downloadBtn.innerHTML = `<b> ${timer}</b>seconds waiting`;
+        }
+        clearInterval(initCounter);
+        location.href = fileLink;
+        downloadBtn.textContent = "downloading..";
+
+        setTimeout(()=>{  
+             downloadBtn.classList.replace("timer","disable-timer");
+             downloadBtn.innerHTML=`<a href="#" class="btn" id="downloadbtn" data-timer="10">Download CV</a>`;
+
+
+        },3000);
+
+
+    },1000);
+};
+downloadBtn.addEventListener("click",initTimer)

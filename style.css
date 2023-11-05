@@ -237,6 +237,15 @@ section{
     background: var(--hover-color);
 
 }
+#downloadbtn.timer{
+    color: #12f7ff;
+    font-size:.8rem;
+}
+#downloadbtn.timer b{
+    color: #12f7ff;
+    padding: 0 5px;
+}
+
 .social-icons{
     margin-top: 8rem;
     display: flex;
@@ -986,6 +995,11 @@ footer a i{
         margin-bottom: 5rem;
 
     }
+    .img-box img{
+        height: 450px;
+        width: 340px;
+    }
+
     .liquid-shape{
         width: 80%;
         left: 10%;
