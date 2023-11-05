@@ -43,7 +43,6 @@ setInterval(changeText,3000)
 
 // circleskill.........................................
 
-
 const circles = document.querySelectorAll('.circle');
 circles.forEach(elem => {
     var dots = elem.getAttribute("data-dots");
@@ -62,6 +61,31 @@ circles.forEach(elem => {
         pointsMarked[i].classList.add('marked');
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -103,7 +127,7 @@ window.addEventListener("scroll",activeMenu);
 
 
  // // togle icon navbar.........
-document.addEventListener("DOMContentLoaded",()=>{
+
     let menuIcon = document.querySelector("#menu-icon");
     let navlist = document.querySelector(".navlist");
 
@@ -119,7 +143,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
 
 
-});
+
 
 // parallax....................................
 
