@@ -9,21 +9,21 @@
 }
 :root{
     --text-color:#f5f5f5;
-    --hover-color:#12f7ff;
-    --bg-color:#250821;
-    --secon-bg-color:#292e33;
+    --hover-color:#780858;
+    --bg-color:#DB7093;
+    --secon-bg-color:#7f98b1;
     --big-font:2.5rem;
     --normal-font:2rem;
-    --neon-box-shadow:0 0 .5rem #12f7ff;
+    --neon-box-shadow:0 0 .5rem #780858;
     --h2-font:3rem;
-    --font-neon-text-shadow:0 0 10px rgba(18,247,255,0.3),
-    0 0 20px rgba(18,247,255,0.3),
-    0 0 30px rgba(18,247,255,0.3),
-    0 0 40px rgba(18,247,255,0.3),
-    0 0 70px rgba(18,247,255,0.3),
-    0 0 80px rgba(18,247,255,0.3),
-    0 0 100px rgba(18,247,255,0.3),
-    0 0 150px rgba(18,247,255,0.3);
+    --font-neon-text-shadow:0 0 10px rgba(120, 8, 88,0.3),
+    0 0 20px rgba(120, 8, 88,0.3),
+    0 0 30px rgba(120, 8, 88,0.3),
+    0 0 40px rgba(120, 8, 88,0.3),
+    0 0 70px rgba(120, 8, 88,0.3),
+    0 0 80px rgba(120, 8, 88,0.3),
+    0 0 100px rgba(120, 8, 88,0.3),
+    0 0 150px rgba(120, 8, 88,0.3);
 }
 ::-webkit-scrollbar{
     height: 0;
@@ -57,8 +57,7 @@ header{
     padding: 20px 10%;
 }
 header.sticky{
-    background: var(--bg-color);
-    border-bottom: 1px solid var(--secon-bg-color);
+    background: transparent;
     padding: 12px 10%;
 
 }
@@ -69,7 +68,9 @@ header.sticky{
     
 }
 span{
-    color: #12f7ff;
+    color: #780858;
+    text-shadow: var(--font-neon-text-shadow);
+
 }
 .navlist{
     display: flex;
@@ -86,14 +87,14 @@ span{
 }
 .navlist a:hover{
     color: var(--hover-color);
-    text-shadow: 0 0 10px rgba(18,247,255,0.6),
-    0 0 20px rgba(18,247,255,0.6),
-    0 0 30px rgba(18,247,255,0.6),
-    0 0 40px rgba(18,247,255,0.6),
-    0 0 70px rgba(18,247,255,0.6),
-    0 0 80px rgba(18,247,255,0.6),
-    0 0 100px rgba(18,247,255,0.6),
-    0 0 150px rgba(18,247,255,0.6);
+    text-shadow: 0 0 10px rgba(120, 8, 88,0.6),
+    0 0 20px rgba(120, 8, 88,0.6),
+    0 0 30px rgba(120, 8, 88,0.6),
+    0 0 40px rgba(120, 8, 88,0.6),
+    0 0 70px rgba(120, 8, 88,0.6),
+    0 0 80px rgba(120, 8, 88,0.6),
+    0 0 100px rgba(120, 8, 88,0.6),
+    0 0 150px rgba(120, 8, 88,0.6);
 }
 .navlist a:active{
     color: var(--hover-color);
@@ -253,7 +254,7 @@ section{
     color: var(--hover-color);
     border: 2px solid var(--hover-color);
     transition: .6s;
-    box-shadow: 0 0 0.3rem #12f7ff;
+    box-shadow: 0 0 0.3rem #780858;
     border-radius: 5px;
     position: relative;
     z-index: 1;
@@ -736,7 +737,7 @@ margin-bottom: .2rem;
     justify-content: space-between;
 }
 footer p{
-    color: #bdbdbd;
+    color: #780858;
 }
 footer a{
     display: inline-flex;
@@ -933,7 +934,7 @@ footer a i{
     :root{
         --big-font:2.2rem;
         --normal-font:1.8rem;
-        --neon-box-shadow:0 0 .8rem #12f7ff;
+        --neon-box-shadow:0 0 .8rem  #780858 ;
         --h2-font:2rem;
     
     }
