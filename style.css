@@ -196,7 +196,7 @@ section{
     align-items: center;
     width: 150px;
     height: 100%;
-    background: var(--hover-color);
+    background: linear-gradient(144deg,rgb(119, 28, 149)0%,rgba(49,39,157,1)100%);
     color: var(--bg-color);
     font-size: 1rem;
     letter-spacing: 1px;
@@ -234,7 +234,7 @@ section{
     color: var(--bg-color);
 }
 .btn:nth-child(2)::before{
-    background: var(--hover-color);
+    background: linear-gradient(144deg,rgb(119, 28, 149)0%,rgba(49,39,157,1)100%);
 
 }
 #downloadbtn.timer{
@@ -283,7 +283,7 @@ section{
     top: 0;
     width: 0;
     height: 100%;
-    background: var(--hover-color);
+    background: linear-gradient(144deg,rgb(119, 28, 149)0%,rgba(49,39,157,1)100%);
     transition: .6s;
     z-index: -1;
 
@@ -510,7 +510,7 @@ margin-bottom: .2rem;
     height: 100%;
     position: absolute;
     left: 0;
-    background: var(--hover-color);
+    background: linear-gradient(144deg,rgb(119, 28, 149)0%,rgba(49,39,157,1)100%);
     border-radius: 25px;
     box-shadow: var(--neon-box-shadow);
 
@@ -708,6 +708,7 @@ margin-bottom: .2rem;
 #contact{
     width: 100%;
     padding: 10px;
+
 }
 .box-wrapper{
     position: relative;
@@ -716,6 +717,7 @@ margin-bottom: .2rem;
     margin: auto;
     margin-top: 35px;
     border-radius: 30px;
+    margin-bottom: 50px;
 }
 .info-wrap{
     width: 35%;
@@ -860,7 +862,7 @@ margin-bottom: .2rem;
     transition: .5s;
 }
 .submit-btn:hover{
-    background: #780858;
+    background: linear-gradient(144deg,rgb(128, 35, 158)0%,rgba(49,39,157,1)100%);
 }
 
 
@@ -887,12 +889,12 @@ margin-bottom: .2rem;
 .footer{
     width:100%;
     position: absolute;
-    background: linear-gradient(144deg,rgba(126,39,156,1)0%,rgba(49,39,157,1)100%);
+    background: linear-gradient(144deg,rgb(128, 35, 158)0%,rgba(49,39,157,1)100%);
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
-    
+    margin-top: 35px;
 }
 .foot-row{
     width: 85%;
@@ -914,7 +916,7 @@ margin-bottom: .2rem;
 .colu:nth-child(2), .colu:nth-child(3){
     flex-basis: 15%;
 }
-.colu h3{
+.colu h2{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
@@ -1118,7 +1120,7 @@ hr{
         box-shadow: none;
     }
     100%{
-        background: var(--hover-color);
+        background: linear-gradient(144deg,rgb(119, 28, 149)0%,rgba(49,39,157,1)100%);
         box-shadow: var(--neon-box-shadow);
     }
 }
