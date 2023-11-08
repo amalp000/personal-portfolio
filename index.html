@@ -6,6 +6,7 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
     <header>
@@ -445,32 +446,117 @@
 
     <!-- contact section................ -->
 
-    <section id="contact" class="contant">
-        <div class="main-text scroll-bottom">
-            <span>Ask Me Questions</span>
-            <h2>Contact Me</h2>
-            
-        </div>
-        <form action="#">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
-            <input type="text" placeholder="Your Address">
-            <input type="number" placeholder="Phone Number">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <div class="btn-box formBtn">
-                <button type="submit" class="btn">Send Message</button>
+    <section id="contact">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Ask Me Questions</h2>
+                <h3 class="info-sub-title">Contact Me</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone :</span><a href="tel:7306230437"> 7306230437</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email :</span><a href="mailto:amalp929@gmail.com"> amalp929@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp :</span><a href="https://wa.me/7306230437"> 7306230437</a>
+                    </li>
+                </ul>
+                <ul class="social-icon">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+
             </div>
-
-        </form>
-
+            <div class="form-wrap">
+                <form action="#" method="post">
+                    <h2 class="form-title">Send Us a Message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="lname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" placeholder="Mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="write your message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="send message" class="submit-btn">
+                </form>
+            </div>
+        </div>
     </section>
 
-<!-- footer website......................... -->
-    <footer>
-        <p>Copyright &copy;2023 by Amal || All Right Reserved</p>
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-    </footer>
 
+
+
+<!-- footer website......................... -->
+<footer class="footer">
+    <div class="foot-row">
+        <div class="colu">
+            <img src="img/images.jpg" class="logo-pic">
+            <p>I collaborated with a team to deliver robust, scalable, and efficient web solutions</p>
+        </div>
+        <div class="colu">
+            <h3>Amal p <div class="uline"><span></span></div></h3>
+            <p>payyannur , kannur</p>
+            <p>kerala ,PIN 670307 , India</p>
+            <h4>+91-7306230437</h4>
+        </div>
+        <div class="colu">
+            <h3>links <div class="uline"><span></span></div></h3>
+            <ul>               
+                <li><a href="">home</a></li>
+                <li><a href="">service</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">contacts</a></li>
+                <li><a href="">skills</a></li>
+
+                
+
+            </ul>
+        </div>
+        <div class="colu">
+            <h3>follow us <div class="uline"><span></span></div></h3>
+            <div class="social-link">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+
+
+            </div>
+
+            
+        </div>
+
+    </div>
+    <hr>
+    <p class="copy-right"> Copyright &copy;2023 by Amal || All Right Reserved</p>
+</footer>
 
 
 

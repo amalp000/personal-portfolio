@@ -517,36 +517,36 @@ margin-bottom: .2rem;
 }
 .skill-bar .bar .html{
     width: 79%;
-    animation: html 3s;
+    animation: html 4s;
 }
 .skill-bar .bar .javascript{
     width: 74%;
-    animation: javascript 4s;
+    animation: javascript 5s;
 
 }
 .skill-bar .bar .css{
     width: 80%;
-    animation: css 4s;
+    animation: css 6s;
 
 }
 .skill-bar .bar .django{
     width: 78%;
-    animation: django 5s;
+    animation: django 7s;
 
 }
 .skill-bar .bar .flask{
     width: 68%;
-    animation: flask 6s;
+    animation: flask 8s;
 
 }
 .skill-bar .bar .angular{
     width: 71%;
-    animation: angular 7s;
+    animation: angular 9s;
 
 }
 .skill-bar .bar .figma{
     width: 55%;
-    animation: figma 8s;
+    animation: figma 10s;
 
 }
 
@@ -596,7 +596,7 @@ margin-bottom: .2rem;
     transform: rotate(calc(var(--i)*var(--rot)))translateY(-45px);
 }
 .points.marked{
-    animation:glow 0.04s linear forwards;
+    animation:glow 0.05s linear forwards;
     animation-delay: calc(var(--i)*0.05s);
 }
 
@@ -704,63 +704,279 @@ margin-bottom: .2rem;
 }
 
 /* contact section...................... */
-.contant{
-    background: var(--secon-bg-color);
+
+#contact{
     width: 100%;
+    padding: 10px;
 }
-.contant form{
-    text-align: center;
-    max-width: 50rem;
-    margin: 1rem auto;
-    margin-bottom: 3rem;
+.box-wrapper{
+    position: relative;
+    display: table;
+    width: 1100px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 30px;
 }
-.contant form input,
-.contant form textarea{
-    width: 100%;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border: none;
-    margin-bottom: .8rem;
-    border-radius: 5px;
-    padding: .7rem;
-}
-.contant form textarea{
-    resize: none;
-}
-.formBtn{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.info-wrap{
+    width: 35%;
+    height: 551px;
+    padding: 40px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background: linear-gradient(144deg,rgba(126,39,156,1)0%,rgba(49,39,157,1)100%);
+    color: #fff;
 
 }
-.formBtn .btn{
-    cursor: pointer;
-    font-size: 1rem;
+.info-title{
+    text-align: left;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+
+
 }
+.info-sub-title{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 17px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+}
+.info-details{
+    list-style: none;
+    margin: 60px 0px;
+}
+.info-details li{
+    margin-top: 25px;
+    font-size: 16px;
+    color: #fff;
+
+}
+.info-details li span{
+    color: #fff;
+
+
+}
+
+.info-details li i{
+    background: #f44770;
+    padding: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.info-details li a{
+    color: #fff;
+    text-decoration: none;
+}
+.info-details li a:hover{
+    color: #f44770;
+    
+}
+.social-icon{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+.social-icon li{
+    display: inline-block;
+}
+.social-icon li i{
+    background: #f44770;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 22%;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.social-icon li i:hover{
+    background: #fff;
+    color: #000;
+
+}
+.form-wrap{
+    width: 65%;
+    float: right;
+    padding: 40px 24px 35px 25px;
+    border-radius: 0px 30px 30px 0px;
+    background: #ecf0f3;
+}
+.form-title{
+    text-align: left;
+    margin-left: 23px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+.form-fields{
+    display: table;
+    width: 100%;
+    padding: 15px 5px 5px 5px;
+
+}
+.form-fields input,
+.form-fields textarea{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+    width: 100%;
+}
+.form-fields textarea{
+    height: 140px;
+    resize: none;
+
+}
+.form-group{
+    width: 46%;
+    float: left;
+    padding: 0px 30px ;
+    margin: 14px 12px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbc3d1, inset  -8px -8px 8px #ffffff;
+
+}
+.form-fields .form-group:Last-child{
+    width: 96%;
+
+}
+.submit-btn{
+    width: 96%;
+    height: 60px;
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    background: #f44770;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: .5s;
+}
+.submit-btn:hover{
+    background: #780858;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer css......................... */
- footer{
-    padding: 1.5rem 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-footer p{
-    color: #780858;
-}
-footer a{
-    display: inline-flex;
-    justify-content: center;
-    color: var(--text-color);
-    background: var(--hover-color);
-    padding: .6rem;
-    border-radius: 5px;
-}
-footer a i{
-    font-size: 1rem;
-    color: var(--secon-bg-color);
 
-} 
+
+
+
+
+
+
+.footer{
+    width:100%;
+    position: absolute;
+    background: linear-gradient(144deg,rgba(126,39,156,1)0%,rgba(49,39,157,1)100%);
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    
+}
+.foot-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.colu{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.logo-pic{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.colu:nth-child(2), .colu:nth-child(3){
+    flex-basis: 15%;
+}
+.colu h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.social-link .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #780858;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid ;
+    margin: 20px 0;
+}
+.copy-right{
+    text-align: center;
+}
+.uline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.uline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+
+
+}
+
+
+
+
+
 
 /* parallax.................................... */
 
@@ -917,7 +1133,16 @@ footer a i{
     }
 
 }
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
 
+
+}
 
 
 
@@ -1015,6 +1240,39 @@ footer a i{
     .filter-button{
         margin: 2.5rem 0;
     }
+    .box-wrapper{
+        width: 100%;
+
+    }
+    .info-wrap,
+    .form-wrap{
+        width: 100%;
+        height: inherit;
+        float: none;
+
+    }
+    .info-wrap{
+        border-radius: 30px 30px 0px 0px ;
+    }
+    .form-wrap{
+        border-radius: 0px 0px 30px 30px;
+    }
+    .form-fields .form-group:Last-child,
+    .submit-btn{
+        width: 100%;
+    
+    }
+    .submit-btn{
+        margin: 10px 0px ;
+    }
+    .colu{
+        flex-basis: 100%;
+        
+    }
+    .colu:nth-child(2), .colu:nth-child(3){
+        flex-basis: 15%;
+    }
+
 
 }
 @media(max-width:420px){
@@ -1038,8 +1296,42 @@ footer a i{
     }
     .image-about p{
         font-size: 1rem;
-        
+    
+    }
+
+    .box-wrapper{
+        width: 100%;
 
     }
+    .info-wrap,
+    .form-wrap{
+        width: 100%;
+        height: inherit;
+        float: none;
+
+    }
+    .info-wrap{
+        border-radius: 20px 20px 0px 0px ;
+    }
+    .form-wrap{
+        border-radius: 0px 0px 20px 20px;
+    }
+    .form-fields .form-group:Last-child,
+    .submit-btn{
+        width: 100%;
+    
+    }
+    .submit-btn{
+        margin: 7px 0px ;
+    }
+    .colu{
+        flex-basis: 100%;
+        
+    }
+    .colu:nth-child(2), .colu:nth-child(3){
+        flex-basis: 15%;
+    }
+
+
 }
     
