@@ -421,51 +421,74 @@ margin-bottom: .2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.section-services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    grid-gap: 2rem;
+.section-services  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    z-index: 9;
+    margin-top: 20px;
 }
 .section-services .service-box{
-    flex: 1 1 18rem;
-    padding: 2rem  1rem 2rem;
-    text-align: center;
-    background:var(--secon-bg-color);
-    transition: transform .4s;
+    width: 350px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    padding: 0 8%;
+    background: #7f98b1;
+    position: relative;
+
+}
+.section-services .service-box::before{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     border-radius: 10px;
+    background: #780858;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+.section-services .service-box:hover.service-box::before{
+    transform: rotate(10deg);
 }
 .service-btn{
     width: auto;
     justify-content: center;
 }
-.service-box:hover{
-    transform: translateY(-.7rem);
-}
 .service-icon{
-    border: 2px solid var(--hover-color);
-    padding: 2rem;
-    background: var(--bg-color);
-    display: flex;
+    width: 50px;
+    height:50px;
+    justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    background: var(--bg-color);
+    color: var(--hover-color);
+    border: 2px solid var(--hover-color);
+    box-shadow: 0 0 0.3rem #780858;
     border-radius: 50%;
     position: relative;
-    color: var(--hover-color);
-    box-shadow: var(--neon-box-shadow);
-    outline: 3px solid var(--bg-color);
 }
 .service-icon h3{
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 1.5rem;
+    text-align: center;
+    padding:5px 0 5px 0; 
 }
 .service-box p{
-    margin: .5rem 0 1.5rem 0;
+    margin: 1rem 0 1rem 0;
     font-weight:300 ;
     letter-spacing: 1px;
     color: #bdbdbd;
     line-height: 1.6;
+}
+.service-icon.bx{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -1236,6 +1259,9 @@ hr{
     .about{
         flex-direction: column-reverse;
     }
+    .section-services{
+        grid-template-columns: repeat(1,1fr);
+    }
     .skill-main{
         grid-template-columns: 1fr;
     }
@@ -1277,7 +1303,7 @@ hr{
 
 
 }
-@media(max-width:420px){
+@media(max-width:400px){
     html{
         font-size: 80%;
     }
@@ -1299,6 +1325,19 @@ hr{
     .image-about p{
         font-size: 1rem;
     
+    }
+    .section-services{
+        width: 80%;
+        margin-top: 10px ;
+        margin-right: 10px;
+    }
+    .service-box{
+        width: 80%;
+        margin-top: 10px ;
+        margin-right: 10px;
+
+
+
     }
 
     .box-wrapper{
